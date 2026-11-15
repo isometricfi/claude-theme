@@ -60,11 +60,7 @@ export const register: Register = on => {
       argumentHint: 'funnel | blocks',
       immediate: true,
     })
-    const set = await $.theme.set(look(sceneNamed(await $.store.get(STORE_KEY))))
-
-    if (!set.isDrawn) {
-      $.ui.status(set.reason)
-    }
+    await $.theme.set(look(sceneNamed(await $.store.get(STORE_KEY))))
 
     return result
   })
