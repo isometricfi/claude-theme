@@ -1,0 +1,5 @@
+{
+  "name": "isometric",
+  "owner": { "name": "Isometric" },
+  "plugins": [{ "name": "isometric-dither", "source": "./" }]
+}
